@@ -1,0 +1,418 @@
+{
+  "name": {
+    "first": {
+      "id": "first-name",
+      "rules": "required",
+      "label": "名",
+      "placeholder": "名",
+      "value": ""
+    },
+    "last": {
+      "id": "last-name",
+      "rules": "required",
+      "label": "姓",
+      "placeholder": "姓",
+      "value": ""
+    }
+  },
+  "email": {
+    "id": "email",
+    "rules": "required|email",
+    "label": "メールアドレス",
+    "value": ""
+  },
+  "address": {
+    "id": "address",
+    "label": "ご住所",
+    "value": ""
+  },
+  "tel": {
+    "id": "tel",
+    "label": "電話番号",
+    "value": ""
+  },
+  "request": {
+    "id": "request",
+    "rules": "required",
+    "label": "ご相談・ご依頼内容",
+    "help-txt": "現状、どのようなことを依頼したいと考えていますか？(想定で構いません)",
+    "description": "現状、どのようなことを依頼したいと考えていますか？(想定で構いません)",
+    "value": "",
+    "options": [
+      {
+        "value": "",
+        "text": "選択してください"
+      },
+      {
+        "value": "A",
+        "text": "選挙のコミュニケーションデザイン制作"
+      },
+      {
+        "value": "B",
+        "text": "政治活動のコミュニケーションデザイン制作"
+      },
+      {
+        "value": "C",
+        "text": "印刷/追加印刷/製本"
+      },
+      {
+        "value": "D",
+        "text": "手作業/発送代行"
+      },
+      {
+        "value": "E",
+        "text": "選挙広報のコンサルティング"
+      },
+      {
+        "value": "F",
+        "text": "その他"
+      }
+    ]
+  },
+  "reqdetail": {
+    "id": "reqdetail",
+    "rules": "required",
+    "label": "ご依頼内容の詳細",
+    "value": "",
+    "options": {
+      "default": [
+        {
+          "value": "",
+          "text": "選択してください"
+        }
+      ],
+      "A": [
+        {
+          "value": "",
+          "text": "選択してください"
+        },
+        {
+          "value": "A",
+          "text": "選挙ポスター"
+        },
+        {
+          "value": "B",
+          "text": "選挙活動ビラ"
+        },
+        {
+          "value": "C",
+          "text": "選挙ハガキ"
+        },
+        {
+          "value": "D",
+          "text": "選挙公報"
+        },
+        {
+          "value": "E",
+          "text": "ノボリ"
+        },
+        {
+          "value": "F",
+          "text": "タスキ"
+        },
+        {
+          "value": "G",
+          "text": "写真撮影"
+        },
+        {
+          "value": "H",
+          "text": "画像処理"
+        },
+        {
+          "value": "I",
+          "text": "事務所看板"
+        },
+        {
+          "value": "J",
+          "text": "選挙カーレンタル"
+        }
+      ],
+      "B": [
+        {
+          "value": "",
+          "text": "選択してください"
+        },
+        {
+          "value": "A",
+          "text": "政治活動ポスター"
+        },
+        {
+          "value": "B",
+          "text": "パーティー案内状/封筒"
+        },
+        {
+          "value": "C",
+          "text": "モノクロ・カラー名刺"
+        },
+        {
+          "value": "D",
+          "text": "リーフレット"
+        },
+        {
+          "value": "E",
+          "text": "新聞・機関紙"
+        },
+        {
+          "value": "F",
+          "text": "立て看板"
+        },
+        {
+          "value": "G",
+          "text": "お礼状・挨拶状"
+        },
+        {
+          "value": "H",
+          "text": "為書き"
+        },
+        {
+          "value": "I",
+          "text": "フリップボード"
+        },
+        {
+          "value": "J",
+          "text": "グッズ"
+        }
+      ],
+      "C": [
+        {
+          "value": "",
+          "text": "選択してください"
+        },
+        {
+          "value": "A",
+          "text": "宛名印刷"
+        },
+        {
+          "value": "B",
+          "text": "通しナンバー印刷"
+        },
+        {
+          "value": "C",
+          "text": "耐性インク印刷"
+        },
+        {
+          "value": "D",
+          "text": "印章"
+        },
+        {
+          "value": "E",
+          "text": "シール"
+        }
+      ],
+      "D": [
+        {
+          "value": "",
+          "text": "選択してください"
+        },
+        {
+          "value": "A",
+          "text": "筆耕・名入れ"
+        },
+        {
+          "value": "B",
+          "text": "ポスター裏貼り"
+        },
+        {
+          "value": "C",
+          "text": "封入・封緘"
+        },
+        {
+          "value": "D",
+          "text": "名刺データ入力"
+        },
+        {
+          "value": "E",
+          "text": "発送代行"
+        }
+      ],
+      "E": [
+        {
+          "value": "",
+          "text": "選択してください"
+        },
+        {
+          "value": "A",
+          "text": "非接触パーティー受付システム"
+        },
+        {
+          "value": "B",
+          "text": "後援会 スタッフ派遣"
+        }
+      ],
+      "F": [
+        {
+          "value": "",
+          "text": "選択してください"
+        },
+        {
+          "value": "A",
+          "text": "立ち振る舞い/演説指導"
+        },
+        {
+          "value": "B",
+          "text": "選挙セミナー"
+        },
+        {
+          "value": "C",
+          "text": "政策立案ワークショップ"
+        }
+      ]
+    }
+  },
+  "method": {
+    "id": "method",
+    "rules": "required",
+    "label": "ご希望の相談方法",
+    "value": "",
+    "options": [
+      {
+        "value": "",
+        "text": "選択してください"
+      },
+      {
+        "value": "A",
+        "text": "30分オンライン無料相談(ZOOM)"
+      },
+      {
+        "value": "B",
+        "text": "電話相談"
+      },
+      {
+        "value": "C",
+        "text": "メール相談"
+      }
+    ]
+  },
+  "budget": {
+    "id": "budget",
+    "rules": "required",
+    "label": "ご予算の上限",
+    "value": "",
+    "options": [
+      {
+        "value": "",
+        "text": "選択してください"
+      },
+      {
+        "value": "A",
+        "text": "30万円未満"
+      },
+      {
+        "value": "B",
+        "text": "50万円程度"
+      },
+      {
+        "value": "C",
+        "text": "100万円程度"
+      },
+      {
+        "value": "D",
+        "text": "200万円程度"
+      },
+      {
+        "value": "E",
+        "text": "300万円以上"
+      }
+    ]
+  },
+  "deadline": {
+    "id": "deadline",
+    "rules": "required",
+    "label": "ご希望の納期",
+    "value": "",
+    "options": [
+      {
+        "value": "",
+        "text": "選択してください"
+      },
+      {
+        "value": "A",
+        "text": "2〜3日以内"
+      },
+      {
+        "value": "B",
+        "text": "1週間以内"
+      },
+      {
+        "value": "C",
+        "text": "2週間以内"
+      },
+      {
+        "value": "D",
+        "text": "3週間以内"
+      },
+      {
+        "value": "E",
+        "text": "1か月以内"
+      },
+      {
+        "value": "F",
+        "text": "2か月以内"
+      },
+      {
+        "value": "G",
+        "text": "3か月以内"
+      },
+      {
+        "value": "H",
+        "text": "6か月以内"
+      },
+      {
+        "value": "I",
+        "text": "1年以内"
+      },
+      {
+        "value": "J",
+        "text": "1年以上先"
+      },
+      {
+        "value": "K",
+        "text": "現時点で未定"
+      }
+    ]
+  },
+  "detail": {
+    "id": "detail",
+    "label": "詳しいご相談内容",
+    "value": ""
+  },
+  "circumstance": {
+    "id": "circumstance",
+    "label": "当社を知った経緯",
+    "value": "",
+    "options": [
+      {
+        "value": "",
+        "text": "選択してください"
+      },
+      {
+        "value": "A",
+        "text": "検索エンジンで見つけた"
+      },
+      {
+        "value": "B",
+        "text": "知り合いの議員から教えてもらった"
+      },
+      {
+        "value": "C",
+        "text": "秘書から教えもらった"
+      },
+      {
+        "value": "D",
+        "text": "後援会から教えてもらった"
+      },
+      {
+        "value": "E",
+        "text": "チラシで知った"
+      },
+      {
+        "value": "F",
+        "text": "Facebookで知った"
+      },
+      {
+        "value": "G",
+        "text": "noteで知った"
+      }
+    ]
+  }
+}
