@@ -53,7 +53,6 @@ export default {
       this.$router.push({ name: 'form-confirm', params: { commit: true } })
     },
     reset(value) {
-      console.log(value)
       if (value === 'preserv') {
         Object.assign(this.$data, this.$options.data())
       }

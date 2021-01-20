@@ -1,7 +1,7 @@
 <template>
   <div id="input">
     <OrganismContactForm
-      v-bind="{ form, values }"
+      v-bind="{ form, values, formName }"
       @update="updateValues"
       @reset="resetValues"
       @submit="toConfirm"
@@ -13,7 +13,7 @@
 export default {
   props: {
     form: { type: Object, default: () => {} },
-    indexText: { type: Object, default: () => {} },
+    formName: { type: String, default: '' },
   },
   data() {
     return {

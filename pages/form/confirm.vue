@@ -35,7 +35,6 @@ export default {
         'form-name': this.formName,
         ...this.normalization(mapped),
       })
-      console.log(encode)
       const config = {
         header: { 'Content-Type': 'application/x-www-form-urlencoded' },
       }
