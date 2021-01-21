@@ -8,6 +8,9 @@ const transporter = nodemailer.createTransport({
     pass: process.env.SMTP_PASS,
   },
   secure: process.env.SMTP_SECURE,
+  tls: {
+    rejectUnauthhorized: false
+  }
 })
 
 exports.handler = function (event, context, callback) {
