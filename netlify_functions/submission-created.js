@@ -17,8 +17,8 @@ exports.handler = function (event, context, callback) {
   const { name, email, type, text } = JSON.parse(event.body).payload.data
 
   let mailOptions = {
-    from: `"大槻デザイニング"<info@de-signing.com> `,
-    to: `${email}`,
+    from: `info@de-signing.com `,
+    to: `nanako.takeuchi77@gmail.com`,
     subject: `【大槻デザインニング】お問い合わせありがとうございます。`,
     text: `${name}様
 お問い合わせありがとうございます。
