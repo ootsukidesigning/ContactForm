@@ -14,26 +14,24 @@ const transporter = nodemailer.createTransport({
 })
 
 exports.handler = function (event, context, callback) {
-  const { name, email, type, text } = JSON.parse(event.body).payload.data
+  const { lastName, email, request, reqdetail } = JSON.parse(event.body).payload.data
 
   let mailOptions = {
-    from: `info@de-signing.com `,
-    to: `nanako.takeuchi77@gmail.com`,
+    from: `"大槻デザイニング"<info@de-signing.com> `,
+    to: `${email}`,
     subject: `【大槻デザインニング】お問い合わせありがとうございます。`,
-    text: `${name}様
+    text: `${lastName}様
 お問い合わせありがとうございます。
 本メールは自動返信メールです。
 内容を確認後、あらためてご連絡をさせていただきますので
 今しばらくお待ちくださいますようお願い申し上げます。
-お問い合わせ内容[${type}]
-${text}`,
-    html: `<b>${name}様</b>
+お問い合わせ内容[${request}]`,
+    html: `<b>${lastName}様</b>
 <p><b>お問い合わせありがとうございます。</b></p>
 <p>本メールは自動返信メールです。<br />
 内容を確認後、あらためてご連絡をさせていただきますので<br />
 今しばらくお待ちくださいますようお願い申し上げます。</p>
-<p><b>お問い合わせ内容[${type}]</b><br />
-${text}</p>`,
+<p><b>お問い合わせ内容[${request}]</b></p>`,
   }
 
   transporter.sendMail(mailOptions, function (error, info) {
