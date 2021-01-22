@@ -14,7 +14,7 @@ const transporter = nodemailer.createTransport({
 })
 
 exports.handler = function (event, context, callback) {
-  const { lastName, email, request, reqdetail } = JSON.parse(event.body).payload.data
+  const { lastname, email, request, reqdetail } = JSON.parse(event.body).payload.data
 
   let mailOptions = {
     from: `"大槻デザイニング"<info@de-signing.com> `,

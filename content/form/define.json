@@ -1,14 +1,14 @@
 {
   "name": {
     "first": {
-      "id": "first-name",
+      "id": "firstname",
       "rules": "required",
       "label": "名",
       "placeholder": "名",
       "value": ""
     },
     "last": {
-      "id": "last-name",
+      "id": "lastname",
       "rules": "required",
       "label": "姓",
       "placeholder": "姓",
