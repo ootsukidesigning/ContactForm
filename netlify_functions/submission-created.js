@@ -25,13 +25,13 @@ exports.handler = function (event, context, callback) {
 本メールは自動返信メールです。
 内容を確認後、あらためてご連絡をさせていただきますので
 今しばらくお待ちくださいますようお願い申し上げます。
-お問い合わせ内容[${request}]`,
+お問い合わせ内容[${request} ${reqdetail}]`,
     html: `<b>${lastname}様</b>
 <p><b>お問い合わせありがとうございます。</b></p>
 <p>本メールは自動返信メールです。<br />
 内容を確認後、あらためてご連絡をさせていただきますので<br />
 今しばらくお待ちくださいますようお願い申し上げます。</p>
-<p><b>お問い合わせ内容[${request}]</b></p>`,
+<p><b>お問い合わせ内容[${request} ${reqdetail}]</b></p>`,
   }
 
   transporter.sendMail(mailOptions, function (error, info) {
