@@ -20,13 +20,13 @@ exports.handler = function (event, context, callback) {
     from: `"大槻デザイニング"<info@de-signing.com> `,
     to: `${email}`,
     subject: `【大槻デザインニング】お問い合わせありがとうございます。`,
-    text: `${lastName}様
+    text: `${lastname}様
 お問い合わせありがとうございます。
 本メールは自動返信メールです。
 内容を確認後、あらためてご連絡をさせていただきますので
 今しばらくお待ちくださいますようお願い申し上げます。
 お問い合わせ内容[${request}]`,
-    html: `<b>${lastName}様</b>
+    html: `<b>${lastname}様</b>
 <p><b>お問い合わせありがとうございます。</b></p>
 <p>本メールは自動返信メールです。<br />
 内容を確認後、あらためてご連絡をさせていただきますので<br />
